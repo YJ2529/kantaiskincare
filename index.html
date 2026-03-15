@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>कांताई स्किन केअर - डॉ. पल्लवी एम. देशमुख | पारोळा, जळगाव</title>
+<meta name="description" content="पारोळ्यातील विश्वासू त्वचा रोग क्लिनिक. CO2 Laser, Dermapen, PRP, Pigmentation, Hair Fall उपचार. आजच appointment बुक करा!">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@700;800;900&family=Noto+Sans+Devanagari:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--teal:#0d6e6e;--teal-light:#1a9e9e;--teal-dark:#084444;--gold:#c9a84c;--gold-light:#f0d080;--cream:#fdf8f0;--white:#fff;--text-dark:#1a1a1a;--text-mid:#555;--radius:20px;}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{font-family:'Inter','Noto Sans Devanagari',sans-serif;background:var(--cream);color:var(--text-dark);overflow-x:hidden;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-feature-settings:'cv02','cv03','cv04','cv11';}
+
+/* ── FLOAT ── */
+.float-cta{position:fixed;bottom:24px;right:16px;z-index:998;display:flex;flex-direction:column;gap:10px;align-items:flex-end;}
+.float-cta a{display:flex;align-items:center;gap:8px;padding:12px 18px;border-radius:50px;font-weight:700;font-size:13px;text-decoration:none;box-shadow:0 6px 24px rgba(0,0,0,0.25);transition:transform 0.2s;}
+.float-cta a:hover{transform:translateY(-2px);}
+.btn-call{background:var(--teal);color:white;}
+.btn-wa{background:#25d366;color:white;}
+.fc-svg{width:17px;height:17px;fill:white;flex-shrink:0;}
+
+/* ── NAV ── */
+nav{position:relative;z-index:10;display:flex;align-items:center;justify-content:space-between;padding:18px 5%;}
+.nav-logo{font-family:'Sora','Noto Sans Devanagari',sans-serif;color:white;font-size:20px;font-weight:900;letter-spacing:-0.5px;}
+.nav-logo span{color:var(--gold);}
+.nav-ph{color:white;text-decoration:none;font-weight:600;font-size:14px;display:flex;align-items:center;gap:8px;background:rgba(255,255,255,0.12);padding:10px 18px;border-radius:50px;border:1px solid rgba(255,255,255,0.25);}
+
+/* ── HERO ── */
+.hero{background:linear-gradient(135deg,var(--teal-dark) 0%,var(--teal) 55%,#0a8a7a 100%);min-height:100vh;display:flex;flex-direction:column;position:relative;overflow:hidden;}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 72% 40%,rgba(201,168,76,0.18) 0%,transparent 60%);}
+.h-pat{position:absolute;inset:0;opacity:0.04;background-image:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/svg%3E");}
+.hero-content{flex:1;display:flex;align-items:center;padding:30px 5% 80px;gap:50px;position:relative;z-index:2;}
+.hero-text{flex:1;min-width:0;}
+.hero-img-col{flex:0 0 320px;}
+.hero-img-col .img-ph{height:420px;border-color:rgba(255,255,255,0.3);background:rgba(255,255,255,0.08);}
+.hero-img-col .ph-label{color:white;}
+.hero-img-col .ph-size{color:rgba(255,255,255,0.55);}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(201,168,76,0.2);border:1px solid var(--gold);color:var(--gold-light);padding:7px 15px;border-radius:50px;font-size:13px;font-weight:500;margin-bottom:18px;animation:fiu 0.6s ease forwards;}
+.hero-title{font-family:'Sora','Noto Sans Devanagari',sans-serif;font-size:clamp(30px,5vw,58px);color:white;line-height:1.08;letter-spacing:-1px;font-weight:900;animation:fid 0.7s ease 0.1s forwards;opacity:0;}
+.hero-title .gold{color:var(--gold);}
+.hero-sub{font-size:clamp(14px,1.8vw,16.5px);color:rgba(255,255,255,0.85);margin:16px 0 24px;line-height:1.75;font-weight:400;animation:fid 0.7s ease 0.2s forwards;opacity:0;}
+.hero-doc-card{display:flex;align-items:center;gap:14px;background:rgba(255,255,255,0.1);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,0.2);border-radius:16px;padding:14px 18px;margin-bottom:28px;animation:fid 0.7s ease 0.3s forwards;opacity:0;}
+.doc-av{width:54px;height:54px;border-radius:50%;overflow:hidden;flex-shrink:0;}
+.doc-av .img-ph{width:54px;height:54px;border-radius:50%;border:none;background:var(--gold);}
+.doc-av .img-ph .ph-inner .ph-icon{font-size:20px;}
+.doc-av .img-ph .ph-label,.doc-av .img-ph .ph-size,.doc-av .img-ph .ph-btn{display:none;}
+.doc-info{color:white;}
+.doc-name{font-size:15.5px;font-weight:700;letter-spacing:-0.2px;}
+.doc-creds{font-size:12px;color:rgba(255,255,255,0.7);margin-top:2px;}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;animation:fid 0.7s ease 0.4s forwards;opacity:0;}
+.btn-primary{background:var(--gold);color:var(--teal-dark);padding:14px 28px;border-radius:50px;font-weight:700;font-size:15px;text-decoration:none;border:none;cursor:pointer;transition:transform 0.2s,box-shadow 0.2s;box-shadow:0 4px 20px rgba(201,168,76,0.4);display:inline-flex;align-items:center;gap:8px;}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 30px rgba(201,168,76,0.5);}
+.btn-sec{background:transparent;color:white;padding:14px 28px;border-radius:50px;font-weight:600;font-size:15px;text-decoration:none;border:2px solid rgba(255,255,255,0.4);transition:background 0.2s;display:inline-flex;align-items:center;gap:8px;}
+.btn-sec:hover{background:rgba(255,255,255,0.12);}
+.hero-timing{position:absolute;bottom:0;left:0;right:0;background:var(--gold);padding:12px 5%;display:flex;align-items:center;gap:10px;font-weight:600;color:var(--teal-dark);flex-wrap:wrap;}
+.hero-timing span{font-size:13.5px;font-weight:600;letter-spacing:0.1px;}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--teal-dark);flex-shrink:0;}
+
+/* ── STATS ── */
+.stats{background:var(--teal-dark);padding:40px 5%;display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:24px;text-align:center;}
+.stat-num{font-family:'Sora','Noto Sans Devanagari',sans-serif;font-size:40px;font-weight:900;color:var(--gold);line-height:1;letter-spacing:-1px;}
+.stat-label{font-size:12.5px;color:rgba(255,255,255,0.75);margin-top:6px;font-weight:500;letter-spacing:0.3px;text-transform:uppercase;}
+
+/* ── GENERAL ── */
+.section{padding:70px 5%;}
+.sec-title{text-align:center;margin-bottom:50px;}
+.sec-title h2{font-family:'Sora','Noto Sans Devanagari',sans-serif;font-size:clamp(24px,3.8vw,38px);color:var(--teal-dark);margin-bottom:10px;letter-spacing:-0.8px;line-height:1.15;font-weight:800;}
+.sec-title p{color:var(--text-mid);font-size:15px;font-weight:400;letter-spacing:0.1px;}
+.tline{width:60px;height:3px;background:var(--gold);margin:14px auto 0;border-radius:2px;}
+.dark-sec .sec-title h2{color:white;}
+.dark-sec .sec-title p{color:rgba(255,255,255,0.65);}
+.dark-sec .tline{background:var(--gold);}
+
+/* ── TREATMENTS ── */
+.t-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:22px;}
+.t-card{background:white;border-radius:var(--radius);overflow:hidden;border:1px solid #e8e8e8;transition:transform 0.25s,box-shadow 0.25s;}
+.t-card:hover{transform:translateY(-4px);box-shadow:0 12px 40px rgba(0,0,0,0.1);}
+.t-card .img-ph{height:190px;border-radius:0;border:none;border-bottom:2px dashed rgba(13,110,110,0.2);}
+.t-body{padding:20px;}
+.t-name{font-family:'Sora','Noto Sans Devanagari',sans-serif;font-size:16px;font-weight:800;color:var(--teal-dark);margin-bottom:7px;letter-spacing:-0.4px;line-height:1.25;}
+.t-desc{font-size:13.5px;color:#666;line-height:1.7;font-weight:400;}
+.t-tag{display:inline-block;margin-top:10px;background:rgba(13,110,110,0.08);color:var(--teal);font-size:11px;font-weight:700;padding:4px 12px;border-radius:20px;}
+
+/* ── PROCESS ── */
+.proc-sec{background:#f0f8f8;}
+.proc-sec .img-ph{height:260px;max-width:800px;margin:0 auto;}
+
+/* ── ADVANCED ── */
+.adv-sec{background:var(--teal-dark);}
+.adv-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:22px;}
+.adv-card{background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.12);border-radius:var(--radius);overflow:hidden;transition:background 0.25s,transform 0.25s;}
+.adv-card:hover{background:rgba(255,255,255,0.1);transform:translateY(-3px);}
+.adv-card .img-ph{height:200px;border-radius:0;border:none;background:rgba(255,255,255,0.04);border-color:rgba(255,255,255,0.1);}
+.adv-card .img-ph .ph-label{color:rgba(255,255,255,0.85);}
+.adv-card .img-ph .ph-size{color:rgba(255,255,255,0.45);}
+.adv-body{padding:20px;}
+.adv-name{color:white;font-size:16px;font-weight:800;margin-bottom:8px;font-family:'Sora','Noto Sans Devanagari',sans-serif;letter-spacing:-0.3px;}
+.adv-desc{color:rgba(255,255,255,0.75);font-size:13.5px;line-height:1.7;font-weight:400;}
+.adv-badge{display:inline-block;margin-top:10px;background:rgba(201,168,76,0.2);color:var(--gold-light);font-size:11px;font-weight:700;padding:4px 12px;border-radius:20px;}
+
+/* ── DOCTOR ── */
+.doc-sec{background:white;}
+.doc-profile{display:flex;gap:50px;align-items:flex-start;flex-wrap:wrap;}
+.doc-photo-col{flex:0 0 280px;}
+.doc-photo-col .img-ph{height:360px;border-radius:24px;}
+.doc-info-col{flex:1;min-width:260px;}
+.doc-pname{font-family:'Sora','Noto Sans Devanagari',sans-serif;font-size:clamp(24px,3.2vw,36px);font-weight:900;color:var(--teal-dark);margin-bottom:6px;letter-spacing:-0.8px;}
+.doc-pcreds{color:var(--gold);font-weight:600;font-size:14.5px;margin-bottom:18px;letter-spacing:0.2px;}
+.doc-pdesc{color:#555;line-height:1.85;margin-bottom:20px;font-size:15px;font-weight:400;}
+.badges{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:20px;}
+.badge{padding:8px 16px;border-radius:50px;font-size:12.5px;font-weight:700;background:rgba(13,110,110,0.08);color:var(--teal);border:1px solid rgba(13,110,110,0.15);letter-spacing:0.1px;}
+.cred-inf{width:100%;margin-top:20px;}
+
+/* ── BEFORE AFTER ── */
+.ba-sec{background:#fdf8f0;}
+.ba-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px;}
+.ba-card{border-radius:var(--radius);overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,0.08);}
+.ba-card .img-ph{height:260px;border-radius:0;border:none;}
+.ba-lbl{background:var(--teal-dark);color:white;padding:12px 16px;font-size:13.5px;font-weight:700;text-align:center;letter-spacing:0.1px;}
+
+/* ── WHY ── */
+.why-sec{background:var(--cream);}
+.why-inf .img-ph{height:180px;max-width:720px;margin:0 auto 40px;}
+.why-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:20px;}
+.why-card{text-align:center;padding:28px 18px;border-radius:var(--radius);background:white;border:1px solid #eee;transition:transform 0.2s,box-shadow 0.2s;}
+.why-card:hover{transform:translateY(-4px);box-shadow:0 8px 28px rgba(0,0,0,0.08);}
+.why-card .img-ph{height:70px;width:70px;border-radius:50%;margin:0 auto 14px;border-style:dashed;}
+.why-card .img-ph .ph-label,.why-card .img-ph .ph-size,.why-card .img-ph .ph-btn{display:none;}
+.why-card .img-ph .ph-icon{font-size:24px;margin:0;}
+.why-title{font-weight:800;color:var(--teal-dark);margin-bottom:7px;font-size:14.5px;font-family:'Sora','Noto Sans Devanagari',sans-serif;letter-spacing:-0.3px;line-height:1.3;}
+.why-desc{font-size:13px;color:#666;line-height:1.65;font-weight:400;}
+
+/* ── FORM ── */
+.form-sec{background:linear-gradient(135deg,var(--teal) 0%,var(--teal-dark) 100%);position:relative;overflow:hidden;}
+.form-sec::before{content:'';position:absolute;top:-40%;right:-10%;width:500px;height:500px;background:radial-gradient(circle,rgba(201,168,76,0.15) 0%,transparent 70%);}
+.form-sec .sec-title h2{color:white;}
+.form-sec .sec-title p{color:rgba(255,255,255,0.75);}
+.form-sec .tline{background:var(--gold);}
+.form-card{background:white;border-radius:24px;padding:36px;max-width:620px;margin:0 auto;box-shadow:0 20px 60px rgba(0,0,0,0.2);position:relative;z-index:2;}
+.f-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+.fg{margin-bottom:16px;}
+.fg label{display:block;font-size:12.5px;font-weight:700;color:var(--teal-dark);margin-bottom:6px;letter-spacing:0.2px;text-transform:uppercase;}
+.fg input,.fg select,.fg textarea{width:100%;padding:12px 15px;border:2px solid #e8e8e8;border-radius:10px;font-size:14.5px;font-family:'Inter','Noto Sans Devanagari',sans-serif;transition:border-color 0.2s;outline:none;background:#fafafa;}
+.fg input:focus,.fg select:focus,.fg textarea:focus{border-color:var(--teal);background:white;}
+.fg textarea{resize:vertical;min-height:72px;}
+.f-submit{width:100%;padding:15px;background:var(--teal);color:white;font-size:16px;font-weight:700;border:none;border-radius:12px;cursor:pointer;letter-spacing:0.2px;font-family:'Sora','Noto Sans Devanagari',sans-serif;transition:background 0.2s,transform 0.2s;margin-top:4px;}
+.f-submit:hover{background:var(--teal-dark);transform:translateY(-1px);}
+.f-note{text-align:center;color:var(--text-mid);font-size:13px;margin-top:12px;}
+
+/* ── CONTACT ── */
+.cont-sec{background:white;}
+.cont-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start;}
+.cont-info h3{font-family:'Sora','Noto Sans Devanagari',sans-serif;font-size:24px;font-weight:900;color:var(--teal-dark);margin-bottom:22px;letter-spacing:-0.5px;}
+.ci{display:flex;gap:14px;align-items:flex-start;margin-bottom:18px;}
+.ci-icon{width:42px;height:42px;border-radius:12px;background:rgba(13,110,110,0.1);display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0;}
+.ci-text strong{display:block;font-size:13px;font-weight:700;color:var(--teal-dark);margin-bottom:3px;text-transform:uppercase;letter-spacing:0.3px;}
+.ci-text span,.ci-text a{color:var(--text-mid);font-size:13px;text-decoration:none;}
+.ci-text a:hover{color:var(--teal);}
+.map-ph{background:#e8f4f4;border-radius:20px;height:260px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;color:var(--teal);font-size:14px;font-weight:600;border:2px dashed rgba(13,110,110,0.2);}
+
+/* ── FOOTER ── */
+footer{background:var(--teal-dark);color:rgba(255,255,255,0.6);text-align:center;padding:24px 5%;font-size:13px;letter-spacing:0.2px;}
+footer strong{color:var(--gold);}
+
+/* ── ANIMATIONS ── */
+@keyframes fiu{from{opacity:0;transform:translateY(-18px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fid{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:translateY(0)}}
+
+/* ══════════════════════════════════════════════
+   IMAGE CLASSES — Responsive optimised
+══════════════════════════════════════════════ */
+
+/* Hero image */
+.hero-img{
+  width:100%;
+  aspect-ratio:3/4;
+  max-height:500px;
+  object-fit:cover;
+  border-radius:24px;
+  box-shadow:0 20px 60px rgba(0,0,0,0.3);
+  display:block;
+}
+
+/* Doctor avatar circle */
+.doc-av-img{
+  width:54px;
+  height:54px;
+  object-fit:cover;
+  border-radius:50%;
+  flex-shrink:0;
+}
+
+/* Doctor main portrait */
+.doc-main-img{
+  width:100%;
+  aspect-ratio:3/4;
+  max-height:420px;
+  object-fit:cover;
+  object-position:top center;
+  border-radius:24px;
+  box-shadow:0 8px 40px rgba(0,0,0,0.15);
+  display:block;
+}
+
+/* Credentials infographic — wide banner */
+.cred-img{
+  width:100%;
+  height:auto;
+  aspect-ratio:6/1;
+  object-fit:contain;
+  object-position:center;
+  border-radius:12px;
+  display:block;
+  background:transparent;
+}
+
+/* Treatment card top image */
+.t-card-img{
+  width:100%;
+  aspect-ratio:16/9;
+  object-fit:cover;
+  display:block;
+}
+
+/* Advanced treatment card image */
+.adv-card-img{
+  width:100%;
+  aspect-ratio:16/9;
+  object-fit:cover;
+  display:block;
+}
+
+/* Before-After image */
+.ba-img{
+  width:100%;
+  aspect-ratio:1/1;
+  object-fit:cover;
+  display:block;
+}
+
+/* Process / Section 3 infographic */
+.proc-img{
+  width:100%;
+  max-width:840px;
+  height:auto;
+  min-height:120px;
+  max-height:320px;
+  object-fit:contain;
+  border-radius:20px;
+  display:block;
+  margin:0 auto;
+}
+
+/* ══════════════════════════════════════════════
+   RESPONSIVE — Mobile, Tablet, Desktop
+══════════════════════════════════════════════ */
+
+/* ── Desktop (1200px+) ── */
+@media(min-width:1200px){
+  .hero-img{max-height:520px;}
+  .doc-main-img{max-height:460px;}
+  .t-grid{grid-template-columns:repeat(4,1fr);}
+  .adv-grid{grid-template-columns:repeat(3,1fr);}
+  .ba-grid{grid-template-columns:repeat(3,1fr);}
+  .cred-img{aspect-ratio:6/1;min-height:90px;}
+}
+
+/* ── Tablet landscape (900px–1199px) ── */
+@media(min-width:900px) and (max-width:1199px){
+  .t-grid{grid-template-columns:repeat(3,1fr);}
+  .adv-grid{grid-template-columns:repeat(2,1fr);}
+  .ba-grid{grid-template-columns:repeat(3,1fr);}
+  .hero-img{max-height:460px;}
+}
+
+/* ── Tablet portrait + large mobile (600px–899px) ── */
+@media(max-width:899px){
+  .hero-img-col{display:none;}
+  .cont-grid{grid-template-columns:1fr;}
+  .doc-profile{flex-direction:column;}
+  .doc-photo-col{flex:none;width:100%;max-width:320px;}
+  .doc-main-img{max-height:380px;aspect-ratio:4/5;}
+  .t-grid{grid-template-columns:repeat(2,1fr);}
+  .adv-grid{grid-template-columns:repeat(2,1fr);}
+  .ba-grid{grid-template-columns:repeat(2,1fr);}
+  .why-grid{grid-template-columns:repeat(3,1fr);}
+  .proc-img{max-height:200px;}
+}
+
+/* ── Mobile (max 599px) ── */
+@media(max-width:599px){
+  .f-row{grid-template-columns:1fr;}
+  .form-card{padding:22px 14px;}
+  .hero-content{padding:22px 5% 80px;}
+  .section{padding:44px 5%;}
+  .hero-timing span{font-size:12px;}
+  .hero-timing{gap:6px;}
+  .float-cta a{padding:11px 15px;font-size:12px;}
+  .t-grid{grid-template-columns:1fr;}
+  .adv-grid{grid-template-columns:1fr;}
+  .ba-grid{grid-template-columns:1fr;}
+  .why-grid{grid-template-columns:repeat(2,1fr);}
+  .stats{grid-template-columns:repeat(2,1fr);padding:30px 5%;}
+  .stat-num{font-size:34px;}
+  .proc-img{max-height:160px;border-radius:14px;}
+  .doc-main-img{max-height:340px;}
+  .cred-img{aspect-ratio:5/1;min-height:60px;}
+  .ba-img{aspect-ratio:4/3;}
+  .cont-grid{grid-template-columns:1fr;}
+  .adv-card-img{aspect-ratio:16/9;}
+  .t-card-img{aspect-ratio:16/9;}
+  .nav-ph{font-size:13px;padding:8px 14px;}
+  .doc-photo-col{max-width:100%;}
+  .sec-title h2{font-size:clamp(22px,6vw,32px);}
+}
+
+/* ── Very small mobile (max 380px) ── */
+@media(max-width:380px){
+  .why-grid{grid-template-columns:1fr;}
+  .stats{grid-template-columns:repeat(2,1fr);}
+  .hero-timing{flex-direction:column;gap:4px;padding:10px 4%;}
+  .dot{display:none;}
+}
+</style>
+</head>
+<body>
+
+
+<!-- FLOATING BUTTONS -->
+<div class="float-cta">
+  <a href="tel:8788889366" class="btn-call">
+    <svg class="fc-svg" viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+    Call Now करा
+  </a>
+  <a href="https://wa.me/918788889366?text=नमस्ते%20डॉ.%20पल्लवी%2C%20मला%20Appointment%20बुक%20करायची%20आहे." class="btn-wa" target="_blank">
+    <svg class="fc-svg" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.122 1.532 5.856L.066 23.734a.5.5 0 0 0 .61.61l5.878-1.466A11.944 11.944 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.907 0-3.693-.506-5.23-1.387l-.374-.217-3.888.97.988-3.797-.235-.388A9.946 9.946 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+    WhatsApp
+  </a>
+</div>
+
+<!-- ══════════════════ HERO ══════════════════ -->
+<section class="hero">
+  <div class="h-pat"></div>
+  <nav>
+    <div class="nav-logo">कांताई <span>Skin Care</span></div>
+    <a href="tel:8788889366" class="nav-ph">📞 8788889366</a>
+  </nav>
+  <div class="hero-content">
+    <div class="hero-text">
+      <div class="hero-badge">✦ पारोळ्यातील #1 Trusted Skin Clinic</div>
+      <h1 class="hero-title">तुमची त्वचा<br><span class="gold">Our Responsibility</span></h1>
+      <p class="hero-sub">Advanced Technology सुसज्ज, Pune-trained Expert Doctor.<br>त्वचेच्या सर्व समस्यांवर Safe & Effective Treatment — आता पारोळ्यातच!</p>
+      <div class="hero-doc-card">
+        <div class="doc-av">
+                    <img src="https://ik.imagekit.io/xkzfyp6ll/Kantai%20Images%20Sec%206/Dr%20Pallavi.jpg?updatedAt=1772737896762" alt="Dr. Pallavi" class="doc-av-img">
+        </div>
+        <div class="doc-info">
+          <div class="doc-name">डॉ. पल्लवी एम. देशमुख</div>
+          <div class="doc-creds">B.H.M.S., PGDCC (Pune) • Cosmetologist</div>
+        </div>
+      </div>
+      <div class="hero-actions">
+        <a href="#appointment" class="btn-primary">🗓 Appointment Book करा</a>
+        <a href="#treatments" class="btn-sec">Treatments पहा →</a>
+      </div>
+    </div>
+    <div class="hero-img-col">
+            <img src="https://ik.imagekit.io/xkzfyp6ll/Kantai%20Images%20Sec%20123/Hero%201.png?updatedAt=1772737594512" alt="Kantai Skin Care Hero" class="hero-img">
+    </div>
+  </div>
+  <div class="hero-timing">
+    <div class="dot"></div><span>⏰ Timing: सकाळी 11 ते दुपारी 4</span>
+    <div class="dot"></div><span>📍 Baviskar Complex, Kajgaon Road, Parola</span>
+    <div class="dot"></div><span>📞 8788889366</span>
+  </div>
+</section>
+
+<!-- ══════════════════ STATS ══════════════════ -->
+<div class="stats">
+  <div><div class="stat-num">500+</div><div class="stat-label">Happy Patients</div></div>
+  <div><div class="stat-num">10+</div><div class="stat-label">Advanced Treatments</div></div>
+  <div><div class="stat-num">100%</div><div class="stat-label">Safe & Certified</div></div>
+  <div><div class="stat-num">Pune</div><div class="stat-label">Expert Training</div></div>
+</div>
+
+<!-- ══════════════════ TREATMENTS ══════════════════ -->
+<section class="section" id="treatments">
+  <div class="sec-title">
+    <h2>उपलब्ध Treatments</h2>
+    <p>Skin च्या सर्व समस्यांवर Effective उपाय</p>
+    <div class="tline"></div>
+  </div>
+  <div class="t-grid">
+
+    <div class="t-card">
+            <img src="https://ik.imagekit.io/xkzfyp6ll/Kantai%20Images%20Sec%20123/Sec%202%20-1.png?updatedAt=1772737609327" alt="पिंपल्स उपचार" class="t-card-img">
+      <div class="t-body"><div class="t-name">Pimples व Scar Treatment</div><div class="t-desc">Acne मुळे आलेले डाग, खड्डे व सुरकुत्या कमी करण्यासाठी Proven Treatment.</div><span class="t-tag">Most Popular ⭐</span></div>
+    </div>
+
+    <div class="t-card">
+            <img src="https://ik.imagekit.io/xkzfyp6ll/Kantai%20Images%20Sec%20123/Sec%202%20-2.png?updatedAt=1772737613903" alt="पिग्मेंटेशन" class="t-card-img">
+      <div class="t-body"><div class="t-name">Pigmentation (काळेपणा) Treatment</div><div class="t-desc">चेहऱ्यावरील Dark Spots, Tan कमी करून Natural Glow परत आणतो.</div><span class="t-tag">Highly Effective</span></div>
+    </div>
+
+    <div class="t-card">
+            <img src="https://ik.imagekit.io/xkzfyp6ll/Kantai%20Images%20Sec%20123/Sec%202%20-3.png?updatedAt=1772737613502" alt="Dark Circles" class="t-card-img">
+      <div class="t-body"><div class="t-name">Dark Circles (डोळ्याखाली)</div><div class="t-desc">Dark Circles कमी करण्यासाठी विशेष Targeted Treatment.</div><span class="t-tag">Quick Results</span></div>
+    </div>
+
+    <div class="t-card">
+            <img src="https://ik.imagekit.io/xkzfyp6ll/Kantai%20Images%20Sec%20123/Sec%202%20-4.png?updatedAt=1772737613285" alt="Anti Aging" class="t-card-img">
+      <div class="t-body"><div class="t-name">Wrinkles (सुरकुत्या) Treatment</div><div class="t-desc">Anti-Aging Treatments ने त्वचा तरुण, Fresh व Glowing ठेवा.</div><span class="t-tag">Anti-Aging ✨</span></div>
+    </div>
+
+    <div class="t-card">
+            <img src="https://ik.imagekit.io/xkzfyp6ll/Kantai%20Images%20Sec%20123/Sec%202%20-5.png?updatedAt=1772737608569" alt="केस गळती" class="t-card-img">
+      <div class="t-body"><div class="t-name">Hair Fall (केस गळती) Treatment</div><div class="t-desc">Hair Fall थांबवण्यासाठी व नवीन Hair Growth साठी Proven Treatment.</div><span class="t-tag">Hair Care</span></div>
+    </div>
+
+    <div class="t-card">
+            <img src="https://ik.imagekit.io/xkzfyp6ll/Kantai%20Images%20Sec%20123/Sec%202%20-%206.png?updatedAt=1772737611334" alt="Dandruff" class="t-card-img">
+      <div class="t-body"><div class="t-name">Dandruff (कोंडा) Treatment</div><div class="t-desc">Dandruff पूर्णपणे नाहीसा करण्यासाठी Advanced Scalp Treatment.</div><span class="t-tag">Scalp Care</span></div>
+    </div>
+
+    <div class="t-card">
+            <img src="https://ik.imagekit.io/xkzfyp6ll/Kantai%20Images%20Sec%20123/Sec%202%20-7.png?updatedAt=1772737613168" alt="Tattoo Removal" class="t-card-img">
+      <div class="t-body"><div class="t-name">Tattoo Removal (टॅटू)</div><div class="t-desc">जुना Tattoo Latest Laser Technology ने Safely काढणे.</div><span class="t-tag">Laser Tech</span></div>
+    </div>
+
+    <div class="t-card">
+            <img src="https://ik.imagekit.io/xkzfyp6ll/Kantai%20Images%20Sec%20123/Sec%202%20-8.png?updatedAt=1772737613922" alt="Mole Removal" class="t-card-img">
+      <div class="t-body"><div class="t-name">Mole Removal (तीळ काढणे)</div><div class="t-desc">चेहरा व Body वरील Moles Safe Method ने काढणे.</div><span class="t-tag">Safe Procedure</span></div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════════ PROCESS INFOGRAPHIC ══════════════════ -->
+<section class="section proc-sec">
+  <div class="sec-title">
+    <h2>Treatment Process</h2>
+    <p>Appointment पासून Result पर्यंत — Simple 4 Steps</p>
+    <div class="tline"></div>
+  </div>
+    <img src="https://ik.imagekit.io/xkzfyp6ll/Sec%207.png?updatedAt=1772737438536" alt="उपचार प्रक्रिया" class="proc-img">
+</section>
+
+<!-- ══════════════════ ADVANCED ══════════════════ -->
+<section class="section adv-sec dark-sec">
+  <div class="sec-title">
+    <h2>Advanced Treatments</h2>
+    <p>Latest Technology ने Best Results</p>
+    <div class="tline"></div>
+  </div>
+  <div class="adv-grid">
+
+    <div class="adv-card">
+            <img src="https://ik.imagekit.io/xkzfyp6ll/Kantai%20Images%20Sec%204/Sec%204%20-%201.png?updatedAt=1772737747453" alt="CO2 Laser" class="adv-card-img">
+    
+      <div class="adv-body"><div class="adv-name">CO2 Laser Treatment</div><div class="adv-desc">Pimple Scars, Deep Marks व Wrinkles कमी करण्यासाठी Most Effective Laser Treatment.</div><span class="adv-badge">⚡ State-of-the-Art</span></div>
+    </div>
+
+    <div class="adv-card">
+            <img src="https://ik.imagekit.io/xkzfyp6ll/Kantai%20Images%20Sec%204/Sec%204%20-%202.png?updatedAt=1772737753462" alt="Dermapen" class="adv-card-img">
+    
+      <div class="adv-body"><div class="adv-name">Microneedling (Dermapen)</div><div class="adv-desc">Skin Tighten करणे, Scars कमी करणे, Glow वाढवण्यासाठी Advanced Treatment.</div><span class="adv-badge">💎 Premium</span></div>
+    </div>
+
+    <div class="adv-card">
+            <img src="https://ik.imagekit.io/xkzfyp6ll/Kantai%20Images%20Sec%204/Sec%204%20-%203.png?updatedAt=1772737753117" alt="Chemical Peel" class="adv-card-img">
+    
+      <div class="adv-body"><div class="adv-name">Chemical Peel (Advanced)</div><div class="adv-desc">Pigmentation, Tan व Dullness कमी करण्यासाठी Medically Proven Peel Treatment.</div><span class="adv-badge">🧪 Clinically Proven</span></div>
+    </div>
+
+    <div class="adv-card">
+            <img src="https://ik.imagekit.io/xkzfyp6ll/Kantai%20Images%20Sec%204/Sec%204%20-%204.png?updatedAt=1772737753745" alt="PRP" class="adv-card-img">
+    
+      <div class="adv-body"><div class="adv-name">PRP Skin Treatment</div><div class="adv-desc">Natural पद्धतीने Skin Glow व Scar Improvement साठी Platelet Rich Plasma Therapy.</div><span class="adv-badge">🩸 100% Natural</span></div>
+    </div>
+
+    <div class="adv-card">
+            <img src="https://ik.imagekit.io/xkzfyp6ll/Kantai%20Images%20Sec%204/Sec%204%20-%205.png?updatedAt=1772737754057" alt="Laser Tattoo" class="adv-card-img">
+    
+      <div class="adv-body"><div class="adv-name">Tattoo Removal (Laser)</div><div class="adv-desc">जुना Tattoo Latest Laser Technology ने Completely व Safely काढणे.</div><span class="adv-badge">🔷 Laser Tech</span></div>
+    </div>
+
+    <div class="adv-card">
+            <img src="https://ik.imagekit.io/xkzfyp6ll/Kantai%20Images%20Sec%204/Sec%204%20-%206.png?updatedAt=1772737753344" alt="Hydra" class="adv-card-img">
+    
+      <div class="adv-body"><div class="adv-name">Hydra Facial Treatment</div><div class="adv-desc">Deep Hydration, Skin Brightening व Instant Glow साठी Premium Hydra Facial.</div><span class="adv-badge">💧 Deep Hydration</span></div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════════ BEFORE AFTER ══════════════════ -->
+<section class="section ba-sec">
+  <div class="sec-title">
+    <h2>Before & After Results</h2>
+    <p>Real Results — Real Patients | खरे परिणाम</p>
+    <div class="tline"></div>
+  </div>
+  <div class="ba-grid">
+    <div class="ba-card">
+            <img src="https://ik.imagekit.io/xkzfyp6ll/Kantai%20Images%20Sec%205/Sec%205%20-%201.png?updatedAt=1772737845313" alt="पिंपल्स BA" class="ba-img">
+      
+      <div class="ba-lbl">Acne & Scars — Before & After</div>
+    </div>
+    <div class="ba-card">
+            <img src="https://ik.imagekit.io/xkzfyp6ll/Kantai%20Images%20Sec%205/Sec%205%20-%202.png?updatedAt=1772737842696" alt="Pigmentation BA" class="ba-img">
+      
+      <div class="ba-lbl">Pigmentation (काळेपणा) — Before & After</div>
+    </div>
+    <div class="ba-card">
+            <img src="https://ik.imagekit.io/xkzfyp6ll/Kantai%20Images%20Sec%205/Sec%205%20-%203.png?updatedAt=1772737845964" alt="Hair BA" class="ba-img">
+      
+      <div class="ba-lbl">Hair Fall (केस गळती) — Before & After</div>
+    </div>
+  </div>
+  <p style="text-align:center;margin-top:18px;font-size:12px;color:#aaa;">* All photos published with patient consent | सर्व छायाचित्रे संमतीने प्रकाशित.</p>
+</section>
+
+<!-- ══════════════════ DOCTOR ══════════════════ -->
+<section class="section doc-sec">
+  <div class="sec-title">
+    <h2>आमच्या Doctor</h2>
+    <p>Experience, Expertise & Trust | अनुभव, तज्ज्ञता आणि विश्वास</p>
+    <div class="tline"></div>
+  </div>
+  <div class="doc-profile">
+    <div class="doc-photo-col">
+            <img src="https://ik.imagekit.io/xkzfyp6ll/Kantai%20Images%20Sec%206/Dr%20Pallavi.jpg?updatedAt=1772737896762" alt="Dr. Pallavi M. Deshmukh" class="doc-main-img">
+    </div>
+    <div class="doc-info-col">
+      <h2 class="doc-pname">Dr. Pallavi M. Deshmukh</h2>
+      <p class="doc-pcreds">B.H.M.S., PGDCC (Pune) | Certified Cosmetologist</p>
+      <p class="doc-pdesc">Dr. Pallavi Deshmukh यांनी Pune मधून Cosmetology मध्ये Advanced Training घेतले आहे. त्यांचा Valuable Experience आणि Modern Technology वापरून त्या प्रत्येक Patient ला Skin Problem वर Best Treatment देतात. Pune ला जाण्याची गरज नाही — Expert आता पारोळ्यातच Available आहेत!</p>
+      <div class="badges">
+        <span class="badge">✓ Pune Certified</span>
+        <span class="badge">✓ B.H.M.S. Doctor</span>
+        <span class="badge">✓ PGDCC Cosmetology</span>
+        <span class="badge">✓ Safe & Effective</span>
+      </div>
+      <div class="cred-inf">
+                <img src="https://ik.imagekit.io/xkzfyp6ll/Kantai%20Images%20Sec%206/Sec%206%20-%201.png?updatedAt=1772737901768" alt="Credentials" class="cred-img">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════ WHY US ══════════════════ -->
+<section class="section why-sec">
+  <div class="sec-title">
+    <h2>आम्हालाच का Choose करावे?</h2>
+    <p>Your Trust is Our Strength | तुमचा विश्वास हीच आमची ताकद</p>
+    <div class="tline"></div>
+  </div>
+    <div class="why-grid">
+    <div class="why-card">
+            <div style="width:70px;height:70px;border-radius:50%;background:rgba(13,110,110,0.1);display:flex;align-items:center;justify-content:center;font-size:28px;margin:0 auto 14px;">🏥</div>
+      
+      <div class="why-title">Advanced Equipment</div>
+      <div class="why-desc">Latest Technology वापरून Best Results मिळवा</div>
+    </div>
+    <div class="why-card">
+            <div style="width:70px;height:70px;border-radius:50%;background:rgba(13,110,110,0.1);display:flex;align-items:center;justify-content:center;font-size:28px;margin:0 auto 14px;">🛡️</div>
+      
+      <div class="why-title">100% Safe & Secure</div>
+      <div class="why-desc">सर्व Treatments Medically Approved आणि Safe</div>
+    </div>
+    <div class="why-card">
+            <div style="width:70px;height:70px;border-radius:50%;background:rgba(13,110,110,0.1);display:flex;align-items:center;justify-content:center;font-size:28px;margin:0 auto 14px;">💰</div>
+      
+      <div class="why-title">Affordable Prices</div>
+      <div class="why-desc">शहरातील सर्वात Affordable Rates</div>
+    </div>
+    <div class="why-card">
+            <div style="width:70px;height:70px;border-radius:50%;background:rgba(13,110,110,0.1);display:flex;align-items:center;justify-content:center;font-size:28px;margin:0 auto 14px;">🎯</div>
+      
+      <div class="why-title">Personalized Care</div>
+      <div class="why-desc">प्रत्येक Patient साठी Individual Treatment Plan</div>
+    </div>
+    <div class="why-card">
+            <div style="width:70px;height:70px;border-radius:50%;background:rgba(13,110,110,0.1);display:flex;align-items:center;justify-content:center;font-size:28px;margin:0 auto 14px;">📍</div>
+      
+      <div class="why-title">Local Expert — पारोळा</div>
+      <div class="why-desc">Pune ला जाण्याची गरज नाही — Expert येथेच Available</div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════ FORM ══════════════════ -->
+<section class="section form-sec" id="appointment">
+  <div class="sec-title">
+    <h2>Appointment Book करा</h2>
+    <p>आजच Book करा — पहिला Consultation Free!</p>
+    <div class="tline"></div>
+  </div>
+  <div class="form-card">
+    <form id="apptForm" onsubmit="submitForm(event)">
+      <div class="f-row">
+        <div class="fg"><label>पूर्ण नाव (Full Name) *</label><input type="text" placeholder="Your Full Name / तुमचे नाव" required></div>
+        <div class="fg"><label>Mobile Number *</label><input type="tel" placeholder="10-digit Mobile No." required pattern="[0-9]{10}"></div>
+      </div>
+      <div class="fg">
+        <label>Skin Problem (त्वचेची समस्या)</label>
+        <select>
+          <option value="">-- Select Problem / समस्या निवडा --</option>
+          <option>Pimples & Scars (पिंपल्स व डाग)</option>
+          <option>Pigmentation / Dark Spots (काळेपणा)</option>
+          <option>Hair Fall (केस गळती)</option>
+          <option>Wrinkles / Anti-Aging (सुरकुत्या)</option>
+          <option>Dark Circles (डोळ्याखाली)</option>
+          <option>Tattoo Removal (टॅटू)</option>
+          <option>Mole Removal (तीळ काढणे)</option>
+          <option>CO2 Laser Treatment</option>
+          <option>Dermapen / Microneedling</option>
+          <option>PRP Skin Treatment</option>
+          <option>Hydra Facial Treatment</option>
+          <option>Dandruff (कोंडा)</option>
+          <option>Other / इतर</option>
+        </select>
+      </div>
+      <div class="f-row">
+        <div class="fg"><label>Preferred Date (तारीख)</label><input type="date"></div>
+        <div class="fg">
+          <label>Preferred Time (वेळ)</label>
+          <select>
+            <option>11:00 AM (सकाळी ११)</option>
+            <option>11:30 AM (सकाळी ११:३०)</option>
+            <option>12:00 PM (दुपारी १२)</option>
+            <option>12:30 PM (दुपारी १२:३०)</option>
+            <option>1:00 PM (दुपारी १)</option>
+            <option>1:30 PM (दुपारी १:३०)</option>
+            <option>2:00 PM (दुपारी २)</option>
+            <option>2:30 PM (दुपारी २:३०)</option>
+            <option>3:00 PM (दुपारी ३)</option>
+            <option>3:30 PM (दुपारी ३:३०)</option>
+          </select>
+        </div>
+      </div>
+      <div class="fg"><label>Additional Info (अतिरिक्त माहिती) — Optional</label><textarea placeholder="Any additional info / कोणतीही माहिती..."></textarea></div>
+      <button type="submit" class="f-submit">🗓 Book Appointment करा</button>
+      <p class="f-note">📞 किंवा Direct Call करा: <a href="tel:8788889366" style="color:var(--teal);font-weight:700;">8788889366</a></p>
+    </form>
+  </div>
+</section>
+
+<!-- ══════════════════ CONTACT ══════════════════ -->
+<section class="section cont-sec" id="contact">
+  <div class="sec-title">
+    <h2>आम्हाला Visit करा</h2>
+    <p>Contact Us | आमच्याशी संपर्क साधा</p>
+    <div class="tline"></div>
+  </div>
+  <div class="cont-grid">
+    <div class="cont-info">
+      <h3>कांताई Skin Care Clinic</h3>
+      <div class="ci"><div class="ci-icon">📍</div><div class="ci-text"><strong>Address (पत्ता)</strong><span>Baviskar Complex, Kajgaon Road, Parola, Dist. Jalgaon</span></div></div>
+      <div class="ci"><div class="ci-icon">📞</div><div class="ci-text"><strong>Mobile / Call</strong><a href="tel:8788889366">8788889366</a></div></div>
+      <div class="ci"><div class="ci-icon">⏰</div><div class="ci-text"><strong>Timing (वेळ)</strong><span>11:00 AM to 4:00 PM (सकाळी ११ ते दुपारी ४)</span></div></div>
+      <div class="ci"><div class="ci-icon">💬</div><div class="ci-text"><strong>WhatsApp</strong><a href="https://wa.me/918788889366" target="_blank">Message करा on WhatsApp</a></div></div>
+      
+    </div>
+    <div>
+      <div class="map-ph">
+        <span style="font-size:44px;">🗺️</span>
+        <strong>Baviskar Complex</strong>
+        <span>Kajgaon Road, Parola, Dist. Jalgaon</span>
+        <a href="https://maps.google.com/?q=Parola+Jalgaon+Maharashtra" target="_blank" style="background:var(--teal);color:white;padding:10px 20px;border-radius:8px;text-decoration:none;font-weight:700;font-size:13px;margin-top:6px;">Open on Google Maps →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 <strong>कांताई Skin Care</strong> | Dr. Pallavi M. Deshmukh | Parola, Dist. Jalgaon</p>
+  <p style="margin-top:8px;">तुमच्या Skin Health साठी ❤️ Crafted with Care</p>
+</footer>
+
+<script>
+document.querySelector('input[type="date"]').min=new Date().toISOString().split('T')[0];
+function submitForm(e){
+  e.preventDefault();
+  const btn=e.target.querySelector('.f-submit');
+  btn.textContent='✅ Appointment Confirmed! आम्ही लवकरच Contact करू.';
+  btn.style.background='#2ecc71';btn.disabled=true;
+  const name=e.target.querySelector('input[type="text"]').value;
+  const phone=e.target.querySelector('input[type="tel"]').value;
+  const prob=e.target.querySelector('select').value;
+  const msg=`नमस्ते डॉ. पल्लवी,%0Aमला Appointment बुक करायची आहे.%0A%0Aनाव: ${name}%0AमोबाईL: ${phone}%0Aसमस्या: ${prob}`;
+  setTimeout(()=>{window.open(`https://wa.me/918788889366?text=${msg}`,'_blank');},800);
+}
+const obs=new IntersectionObserver((entries)=>{entries.forEach(e=>{if(e.isIntersecting){e.target.style.opacity='1';e.target.style.transform='translateY(0)';}});},{threshold:0.08});
+document.querySelectorAll('.t-card,.adv-card,.why-card,.ba-card').forEach(el=>{el.style.opacity='0';el.style.transform='translateY(20px)';el.style.transition='opacity 0.5s ease,transform 0.5s ease';obs.observe(el);});
+</script>
+</body>
+</html>
